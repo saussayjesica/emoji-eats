@@ -3,7 +3,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Emoji Eats
 - Build a interactive menu for emoji eats
 - Learn React basics
+- Responsive web design
 - Uses SpeechSynthesis
+
+![alt text](https://i.imgur.com/jI7hsWb.png)
 
 ## Getting started
 
