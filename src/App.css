@@ -1,0 +1,230 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  color: #484848;
+}
+
+.header__wrapper {
+  padding: 20px 52px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__title {
+  color: #27f573;
+  font-size: 56px;
+  line-height: 72px;
+  margin: 0;
+  letter-spacing: 2.5px;
+  padding: 20px;
+}
+
+.header__emoji {
+  font-size: 90px;
+  padding: 0 10px;
+  animation: rotate 3s linear infinite;
+}
+
+.header__subtitle {
+  color: #484848;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__wrapper {
+  flex: 2;
+  padding: 0 24px;
+}
+
+.menuitem__wrapper {
+  background-color: #fff;
+  display: flex;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  justify-content: space-evenly;
+}
+
+.menuitem__emoji {
+  font-size: 64px;
+  margin: 0 24px;
+}
+
+.menuitem__name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.menuitem__description {
+  padding: 16px 0;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.menuitem__price {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.menuitem__button {
+  color: #7795f8;
+  border: 1px solid #7795f8;
+  background-color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.menuitem__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
+.order__wrapper {
+  padding: 32px;
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.order__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.order__item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.order__total {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.order__text {
+  font-weight: 400;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.order__emoji {
+  font-size: 72px;
+  transform: rotate(90deg);
+  width: fit-content;
+  margin: auto;
+}
+
+.order__submit {
+  color: #fff;
+  background-color: #7795f8;
+  margin: 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border: 0;
+  width: 40%;
+}
+
+.order__reset {
+  color: #7795f8;
+  background-color: #fff;
+  margin: 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border: 1px solid #7795f8;
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+  }
+  .order__wrapper {
+    margin-left: 0;
+  }
+  .order__emoji {
+    animation-duration: 0.8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(0deg);
+    width: auto;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: -10%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
