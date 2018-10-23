@@ -52,3 +52,23 @@ Once you have your app running, replace the css in src/App.css with this https:/
 #### Add custom font
 
 Go to public/index.html in your repo. Add the following `<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet">` underneath the shortcut icon link element on line 13
+
+#### Add dummy data
+
+Create a folder in your repo called `src` and a folder inside of that called `data`. Make a new file called `menuData.js` and add the following code https://gist.github.com/saussayjesica/50f6801bcb3b689e777c2c6fc017c0db. Make sure you save the file.
+
+## Other
+
+#### Javascript map() method
+
+map() takes each element from an original array, transforms it with a function that you specify, and adds the result to a new array in the same order.
+
+```
+const numbers = [1, 2, 3]
+const newArray = array.map(number => (
+  number + 1
+))
+console.log(newArray)
+```
+
+The above will print out newArray which is equal to [2, 3, 4]. We mapped over each item one at a time in the numbers array and increased the value by 1 then added those results to newArray.

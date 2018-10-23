@@ -42,7 +42,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="menu">
-          <div className="menu__wrapper">
+          <div className="menuitems">
             {menuData.map(item => (
               <MenuItem
                 updateOrder={this.handleUpdate}
