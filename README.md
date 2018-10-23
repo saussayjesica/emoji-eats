@@ -20,19 +20,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 React is a Javascript library for building UI components. Check out the React docs for tutorials and documentation - https://reactjs.org/docs
 
-## create-react-app
+#### create-react-app?
 
 Installs a bunch of packages which are needed to set up a convenient development environment including a web server, compiler and testing tools - https://github.com/facebook/create-react-app
 
-## What is JSX?
+#### JSX
 
 JSX looks like HTML markup in JavaScript. However, under the hood, JSX is allowing developers to use HTML syntax to compose JavaScript components
 
-## Props
+#### Props
 
 A React component is a reusable component which can be used over and over again in the UI, but not always we are going to render the same component with same data. We can customise components with different parameters when they are created. These creation parameters are called props (properties).
 
-## State
+#### State
 
 State is similar to props, but it cannot be accessed and modified outside the component and can only be used inside the component
 
