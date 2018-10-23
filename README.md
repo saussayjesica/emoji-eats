@@ -36,9 +36,8 @@ A React component is a reusable component which can be used over and over again 
 
 State is similar to props, but it cannot be accessed and modified outside the component and can only be used inside the component
 
-- Don’t modify state directly e.g. this.state.city = ‘Sydney’
-- Use setState instead e.g this.setState({city: ‘Sydney})
-- You can only assign state in the constructor
+- Don’t modify state directly e.g. `this.state.order = 'Cheeseburger'`
+- Use setState instead e.g `this.setState({ order: 'Cheeseburger' })`
 
 ## Let's get started!
 
