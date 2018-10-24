@@ -61,14 +61,14 @@ Create a folder in your repo called `src` and a folder inside of that called `da
 
 #### Javascript map() method
 
-map() takes each element from an original array, transforms it with a function that you specify, and adds the result to a new array in the same order.
+map() takes each item in an array (an array is like a list of items), it transforms the items one at a time (in the example below it increases the item by 1), and puts the results in a new array
 
 ```
 const numbers = [1, 2, 3]
-const newArray = array.map(number => (
+const newArray = numbers.map(number => (
   number + 1
 ))
 console.log(newArray)
 ```
 
-The above will print out newArray which is equal to [2, 3, 4]. We mapped over each item one at a time in the numbers array and increased the value by 1 then added those results to newArray.
+The above will print out newArray which is equal to [2, 3, 4]. In the example above we went through each item in the array "numbers" (in programming we use the phrase "mapped over"). We mapped over each item one at a time in the numbers array and increased the value by 1 then added those results to "newArray".
