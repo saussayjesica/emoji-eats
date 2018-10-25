@@ -7,13 +7,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Responsive web design
 - Uses SpeechSynthesis
 
-![alt text](https://i.imgur.com/jI7hsWb.png)
+![](https://i.imgur.com/jI7hsWb.png)
 
 ## Prerequisites
 
-- Node >= 6 installed on your machine
+- [Node/npm](https://nodejs.org/en/)
+- Text editor installed such as [VS Code](https://code.visualstudio.com/), Atom or Sublime
+- [Chrome](https://www.google.com/chrome)
+- [React dev tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 - Have some HTML and CSS knowledge
-- Text editor installed such as VS Code, Atom or Sublime
 - Have some experience with the command line
 
 ## What is React?

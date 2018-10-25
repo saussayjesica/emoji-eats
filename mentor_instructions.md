@@ -28,4 +28,24 @@
 
 ## Adding state
 
-1. Add state to the App.js file. Order will be an empty array and cost will be 0.
+1.  Add state to the App.js file (we add it to App.js because it's used in both menuItem and Order). Order will be an empty array and cost will be 0.
+2.  Create the handleUpdate function in App.js. Explain parameters, arguments, setState and concatenate
+3.  The button is in MenuItem so when we click on the button we need to call the method in App.js. To do this we will need to pass the method to menuItem as a prop and call the prop with onClick
+4.  Use the react devtools to see state updating when the button is clicked
+
+## Order component
+
+1.  Create the order component and only render the code for no items.
+2.  To be able to display orders in the order component, we need to pass state down as props. Add an order and total prop and pass down state
+3.  We need to add a ternery operator or an if/else statement to check if we have any orders. If orders.length === 0, we display the no items code
+4.  Add the remaining code that displays the ordered items. Try to get the students to guess that they need to use map() to display the items dynamically
+5.  Add the total section in the order component
+6.  Before adding the buttons, add the resetOrder method to app.js and pass this method to the order component as a prop
+7.  Add the reset button to the order component and test that it works
+8.  Add the submitOrder method to app.js and then pass the method down to Order and add the submit button to the order component
+
+## Refactor
+
+1.  Update components that are not using state to stateless functional components
+2.  Destructure state and props
+3.  Add propTypes
