@@ -32,11 +32,11 @@ JSX looks like HTML markup in JavaScript. However, under the hood, JSX is allowi
 
 #### Props
 
-A React component is a reusable component which can be used over and over again in the UI, but not always we are going to render the same component with same data. We can customise components with different parameters when they are created. These creation parameters are called props (properties).
+A React component can be used over and over again so we don't have to keep writing the same code, but we're not always going to render the component with same data. E.g. in the emoji eats menu, the layout for each menu item is exactly the same but the data (name, price, description) is different. We can customise components with different data when they are created using props (properties).
 
 #### State
 
-State is similar to props, but it cannot be accessed and modified outside the component and can only be used inside the component
+State is similar to props, but it cannot be accessed or modified outside of the component. It can only be used inside the component. We will add state to the parent component (app.js) and then we'll pass those values in state to some of the children components (Order.jsx and MenuItem.jsx) through props. When state is modified, the changes will automatically trickle down to those components via props. So you only need to write the code to change one thing — the state — and watch as your UI updates.
 
 - Don’t modify state directly e.g. `this.state.order = 'Cheeseburger'`
 - Use setState instead e.g `this.setState({ order: 'Cheeseburger' })`
