@@ -41,6 +41,12 @@ State is similar to props, but it cannot be accessed or modified outside of the 
 - Don’t modify state directly e.g. `this.state.order = 'Cheeseburger'`
 - Use setState instead e.g `this.setState({ order: 'Cheeseburger' })`
 
+#### Lifecycle Methods
+
+Through lifecycle methods, we can then control what happens when each tiny section of your UI renders, updates, thinks about re-rendering, and then disappears entirely.
+
+http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 ## Let's get started!
 
 #### Setup
@@ -74,3 +80,29 @@ console.log(newArray)
 ```
 
 The above will print out newArray which is equal to [2, 3, 4]. In the example above we went through each item in the array "numbers" (in programming we use the phrase "mapped over"). We mapped over each item one at a time in the numbers array and increased the value by 1 then added those results to "newArray".
+
+#### Destructuring
+
+Destructuring improves readability and reduces the amount of code we need to write.
+
+Before
+
+```
+const object = { one: 1, two: 2, three: 3 }
+
+const one = object.one;
+const two = object.two;
+const three = object.three
+
+console.log(one, two, three) // prints 1, 2, 3
+```
+
+The example above is long, clunky, and takes way too many lines of code. With destructuring, your code becomes much more clear.
+
+```
+const object = { one: 1, two: 2, three: 3 }
+
+const { one, two, three } = object;
+
+console.log(one, two, three) // prints 1, 2, 3
+```

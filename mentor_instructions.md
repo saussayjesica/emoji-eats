@@ -24,7 +24,7 @@
 2.  Explain how the component isn't reusable if we hardcode the data. To make it reuseable we need to use props
 3.  Import the menuData in the App.js file as well as the menuItem component. Add the following props to menuItem - emoji, label, name, description, price
 4.  Assign the data for the first item in the menuData to the props eg. name={menuData[0].name}
-5.  Explain how we could have a menuItem in App.js for every item on our menu but this isn't very dynamic. So we want to use the map method so we can dynamically render a menuItem for every item in the data. Explanation for map is in the readme. Make sure you uipdate the props
+5.  Explain how we could have a menuItem in App.js for every item on our menu but this isn't very dynamic. So we want to use the map method so we can dynamically render a menuItem for every item in the data. Explanation for map is in the readme. Make sure you uipdate the props and add a key using the index.
 
 ## Adding state
 
@@ -44,8 +44,17 @@
 7.  Add the reset button to the order component and test that it works
 8.  Add the submitOrder method to app.js and then pass the method down to Order and add the submit button to the order component
 
+## Lifecycle methods
+
+1.  Briefly explain componentDidMount and how we will use it to fetch the menudata
+2.  Add componentDidMount to App.js and create a setTimeout function that saves the menudata to state after 3secs.
+3.  Update state with data
+4.  Create the loading component
+5.  Add a ternary to display the loading if the data isn't ready
+
 ## Refactor
 
 1.  Update components that are not using state to stateless functional components
 2.  Destructure state and props
 3.  Add propTypes
+4.  Use hooks
